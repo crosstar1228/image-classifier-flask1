@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Classifier Tutorial</title>
+    </head>
+
+    <body>
+        <h1 class="text-center">Image Classifer</h1>
+        
+        <form class="p-3 text-center" action = '/', method = "post" enctype = 'multipart/form-data'>
+            <input class = "form-control" type='file' name='imagefile'>  <!--#file 형식으로 input을 받는 imagefile -->
+            <input class = "btn btn-primary mt-3"type ="submit" value ="Predict Image"> <!--# class 형식으로 input을 받는 -->
+    
+        </form>
+        {% if prediction %}
+        <!--만약 prediction이 존재한다면 -->
+            <p class="text-center"> Image is a {{prediction}} </p>
+            <!--이 paragraph를 screen에 띄워줘!-->
+        {% endif %}
+    </body>
+</html>
