@@ -4,7 +4,7 @@
 2. Click Predict image
 3. The predicted output is printed under the buttons.
 
-## Config
+### Config
 > - IDE : pycharm 
 > - stack : flask, python, keras, tensorflow
 > - OS : windows 10
@@ -12,12 +12,14 @@
 ### Model
 - VGG16( pretrained, under)
 - 1000 classes of classification
+
+
 ![img_1.png](images/img_1.png)
 
 ### 파일 구성
 - images : contains input image file or README img
 - templates : html template(index.html)
-- mlenv(optional) : virtual environment 
+
 
 1. git cloning
 ```
@@ -30,6 +32,7 @@ $ git clone https://github.com/crosstar1228/image-classifier-flask1.git
 $ pip install -r requirements.txt 
 ```
 or
+
 ```
 $ pip install flask
 $ pip install keras
@@ -40,11 +43,16 @@ $ pip install pillow
 
 2-2. Using Virtual environment
 
-(image_classifier_flask1 디렉토리 안의 cmd 환경에서)
+- (image_classifier_flask1 디렉토리 안의 cmd 환경에서)
 
 ```CMD
-$ mlenv\Scripts\activate
+$ python -m venv {가상환경명}
+$ {가상환경명}\Scripts\activate
 ```
+after activating virtual environment😎
+
+- install proper libraries according to 2-1
+
 3. run app.py file(localhost)
 ```angular2html
 python app.py
